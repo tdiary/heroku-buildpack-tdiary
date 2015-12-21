@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f $1/tdiary.gemspec ]; then
+  echo "-----> tDiary app detected"
+  exit 0
+else
+  exit 1
+fi

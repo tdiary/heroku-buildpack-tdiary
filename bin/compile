@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "-----> Preparing tDiary environments for heroku"
+
+files="$1/misc/paas/heroku/*"
+for file in ${files}; do
+  if [ -f $file ]; then
+    echo "       Copying misc/paas/heroku/`basename $file`"
+    cp $file $1/
+  fi
+done
