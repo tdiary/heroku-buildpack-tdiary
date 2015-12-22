@@ -2,6 +2,12 @@
 
 echo "-----> Preparing tDiary environments for heroku"
 
+file="$1/Gemfile.lock"
+if [ -f $file ]; then
+  echo "       Deleting `basename $file`"
+  rm $file
+fi
+
 files="$1/misc/paas/heroku/*"
 for file in ${files}; do
   if [ -f $file ]; then
