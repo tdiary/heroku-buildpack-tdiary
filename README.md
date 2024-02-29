@@ -26,9 +26,9 @@ $ heroku create
 $ heroku addons:create sendgrid
 $ heroku addons:create memcachier
 $ heroku addons:create mongolab
-$ heroku config:set TWITTER_KEY=YOUR_TWITTER_KEY
-$ heroku config:set TWITTER_SECRET=YOUR_TWITTER_SECRET
-$ heroku config:set TWITTER_NAME=YOUR_TWITTER_NAME
+$ heroku config:set GITHUB_KEY=YOUR_GITHUB_KEY
+$ heroku config:set GITHUB_SECRET=YOUR_GITHUB_SECRET
+$ heroku config:set GITHUB_NAME=YOUR_GITHUB_NAME
 ```
 
 Set buildpacks.
